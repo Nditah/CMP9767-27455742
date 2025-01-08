@@ -30,50 +30,57 @@ source install/setup.bash
 ```
 
 
-### Step 3
+### Step 3: Launch Gazebo
 
+For limo simulator with a custom world
 
 ```bash
-
+ros2 launch limo_gazebosim limo_gazebo_diff.launch.py world:=src/robot_assignment/worlds/custom_world.world
 ```
 
 
-### Step 4
-
+### Step 4: Inspect Sensors with  rviz2
+Inspect the simulated robot and its sensors by running rviz2 in another terminal window
 
 ```bash
-
+rviz2 -d /opt/ros/lcas/src/limo_ros2/src/limo_gazebosim/rviz/urdf.rviz
 ```
 
 
-### Step 5 
-
+### Step 5: Launch the navigation
+Launch the navigation stack by invoking the following command
 
 ```bash
+ros2 launch limo_navigation limo_navigation.launch.py
+```
 
+### Step 6: Object detection in 3D
+ The node outputs the detected objects in 3d as the `/limo/object_location` topic.
+
+```bash
+ros2 run robot_assignment detector_3d
+```
+
+
+### Step 7: BasicNavigator approach
+ It contains a list of user defined waypoints that the robot will follow using a BasicNavigator approach.
+
+```bash
+ros2 run robot_assignment demo_inspection
 ```
 
 
 
-### Step 6 
-
+### Step 8
+Run the counter node by issuing ros2 run cmp9767_tutorial counter_3d. The node prints out a full list of all objects in the terminal.
 
 ```bash
-
+ros2 run robot_assignment counter_3d
 ```
 
 
-
-### Step 7
-
-
-```bash
-
-```
-
-
-### Step 8 
-
+### Step 9 
+Show count on a web page
 
 ```bash
 
@@ -83,3 +90,4 @@ source install/setup.bash
 
 
 CMP9767 Workshop Riccardo Polvara, Grzegor Cielniak [Wiki](https://github.com/LCAS/CMP9767/wiki).
+
