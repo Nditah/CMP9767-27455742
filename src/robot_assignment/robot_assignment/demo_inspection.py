@@ -78,7 +78,7 @@ def main():
         feedback = navigator.getFeedback()
         if feedback and i % 5 == 0:
             print(
-                'Executing current waypoint: '
+                '[DEMO_INSPECTION] Executing current waypoint: '
                 + str(feedback.current_waypoint + 1)
                 + '/'
                 + str(len(inspection_points))
