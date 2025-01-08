@@ -1,0 +1,8 @@
+./LICENSE
+devel/
+log/
+build/
+bin/
+lib/
+install/
+*~
