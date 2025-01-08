@@ -24,8 +24,6 @@ setup(
     entry_points={
         'console_scripts': [
             'mover = robot_assignment.mover:main',
-            'move_square = robot_assignment.move_square:main',
-            'move_circle = robot_assignment.move_circle:main',
             'image_projection_1 = robot_assignment.image_projection_1:main',
             'image_projection_2 = robot_assignment.image_projection_2:main',
             'detector_basic = robot_assignment.detector_basic:main',

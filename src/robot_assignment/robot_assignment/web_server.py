@@ -38,7 +38,7 @@ def index():
     <!DOCTYPE html>
     <html>
       <head>
-        <title>Object Detection Results</title>
+        <title>Toy Detection Results</title>
         <!-- Bootstrap CSS -->
         <link 
           rel="stylesheet" 
@@ -88,6 +88,8 @@ def index():
         <script 
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
         </script>
+
+        <!-- Credit -->
       </body>
     </html>
     """

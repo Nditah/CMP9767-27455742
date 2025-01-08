@@ -16,6 +16,10 @@ In the root of the workspace, run colcon build.
 This allows the installed files to be changed by changing the files in the source space for faster iteration.
 
 ```bash
+
+# Install dependencies
+pip install flask
+
 colcon build --symlink-install
 ```
 
@@ -27,6 +31,10 @@ When colcon has completed building successfully, the output will be in the insta
 
 ```bash
 source install/setup.bash
+
+# Alternatively, source it once and for all
+
+echo "source ./install/setup.bash" >> ~/.bashrc
 ```
 
 
