@@ -79,10 +79,14 @@ ros2 run robot_assignment counter_3d
 ```
 
 
-### Step 9 
-Show count on a web page
+### Step 9: Show count on a web page
 
 ```bash
+# Terminal 1: start camera_classifier_node
+ros2 run robot_assignment camera_classifier_node
+
+# Terminal 2: start web_server_node
+ros2 run robot_assignment web_server_node
 
 ```
 

@@ -3,7 +3,7 @@
 <package format="3">
   <name>robot_assignment</name>
   <version>0.1.0</version>
-  <description>Code for the Robot Programming - CMP9767  assigment at the University of Lincoln, UK.</description>
+  <description>ROS2 Package for the Robot Programming - CMP9767 course at the University of Lincoln, UK: color and shape classification, storing results in SQLite, and hosting a web server.</description>
   <maintainer email="27455742@students.lincoln.ac.uk">Anyeh Ndi-Tah</maintainer>
   <maintainer email="rpolvara@lincoln.ac.uk">Riccardo Polvara</maintainer>
   <maintainer email="gcielniak@lincoln.ac.uk">Grzegor Cielniak</maintainer>

@@ -16,9 +16,9 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='Riccardo Polvara',
-    maintainer_email='rpolvara@lincoln.ac.uk',
-    description='Code for the CMP9767 module (Robot Programming) offered at the University of Lincoln, UK.',
+    maintainer='Anyeh Ndi-Tah',
+    maintainer_email='27455742@students.lincoln.ac.uk',
+    description='ROS2 Package for the Robot Programming - CMP9767 course at the University of Lincoln, UK: color and shape classification, storing results in SQLite, and hosting a web server.',
     license='MIT',
     tests_require=['pytest'],
     entry_points={
@@ -32,7 +32,9 @@ setup(
             'detector_3d = robot_assignment.detector_3d:main',
             'counter_3d = robot_assignment.counter_3d:main',
             'tf_listener = robot_assignment.tf_listener:main',            
-            'demo_inspection = robot_assignment.demo_inspection:main'
+            'demo_inspection = robot_assignment.demo_inspection:main',
+            'camera_classifier_node = robot_assignment.camera_classifier:main',
+            'web_server_node = robot_assignment.web_server:main',
         ],
     },
 )
