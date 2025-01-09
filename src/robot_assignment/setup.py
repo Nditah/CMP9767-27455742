@@ -22,17 +22,11 @@ setup(
     license='MIT',
     entry_points={
         'console_scripts': [
-            'mover = robot_assignment.mover:main',
-            'image_projection_1 = robot_assignment.image_projection_1:main',
-            'image_projection_2 = robot_assignment.image_projection_2:main',
-            'detector_basic = robot_assignment.detector_basic:main',
-            'detector_3d = robot_assignment.detector_3d:main',
-            'counter_3d = robot_assignment.counter_3d:main',
-            'tf_listener = robot_assignment.tf_listener:main',            
-            'demo_inspection = robot_assignment.demo_inspection:main',
-            'camera_classifier_node = robot_assignment.camera_classifier:main',
+            'camera_classifier = robot_assignment.camera_classifier:main',
             'color_3d_detection = robot_assignment.color_3d_detection:main',
-            'web_server_node = robot_assignment.web_server:main',
+            'counter_3d = robot_assignment.counter_3d:main',
+            'demo_inspection = robot_assignment.demo_inspection:main',
+            'web_server = robot_assignment.web_server:main',
         ],
     },
      extras_require={

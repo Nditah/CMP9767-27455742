@@ -39,6 +39,10 @@ This allows the installed files to be changed by changing the files in the sourc
 ```bash
 # Install dependencies
 pip install flask
+
+sudo apt install ros-humble-nav2-* -y
+
+
 bash: pytest: command not found
 
 colcon build --symlink-install
@@ -58,7 +62,7 @@ echo "source ./install/setup.bash" >> ~/.bashrc
 ```bash
 
 # Terminal 2: start web_server_node
-ros2 run robot_assignment web_server_node
+ros2 run robot_assignment web_server
 
 ```
 
@@ -93,17 +97,13 @@ Run the counter node to prints out a full list of all objects in the terminal.
 ```bash
 ros2 run robot_assignment counter_3d
 
-ros2 run robot_assignment camera_classifier_node
+ros2 run robot_assignment camera_classifier
 ```
 
 ### Step 7: Object detection in 3D
  The node outputs the detected objects in 3d as the `/limo/object_location` topic.
 
 ```bash
-ros2 run robot_assignment detector_3d
-
-# Or
-
 ros2 run robot_assignment color_3d_detection
 ```
 
@@ -125,7 +125,7 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 
 View Topics
 ```bash
-ros2 topic list
+ros2 topic echo /amcl_pose > output.txt
 ```
 
 ## Credit & References

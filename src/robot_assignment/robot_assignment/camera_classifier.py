@@ -10,9 +10,9 @@ from datetime import datetime
 
 DB_PATH = os.path.join(os.path.expanduser('~'), 'toy_detections.db')
 
-class CameraClassifierNode(Node):
+class CameraClassifier(Node):
     def __init__(self):
-        super().__init__('camera_classifier_node')
+        super().__init__('camera_classifier')
 
         # Create/ connect to SQLite database
         self.connection = sqlite3.connect(DB_PATH, check_same_thread=False)
@@ -30,7 +30,7 @@ class CameraClassifierNode(Node):
             10
         )
 
-        self.get_logger().info("CameraClassifierNode is up and running.")
+        self.get_logger().info("CameraClassifier is up and running.")
 
     def _create_table_if_not_exists(self):
         self.cursor.execute(
@@ -155,7 +155,7 @@ class CameraClassifierNode(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    node = CameraClassifierNode()
+    node = CameraClassifier()
     try:
         rclpy.spin(node)
     except KeyboardInterrupt:

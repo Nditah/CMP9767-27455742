@@ -4,6 +4,7 @@ import sqlite3
 import os
 from flask import Flask, render_template_string, redirect, url_for
 from threading import Thread
+import subprocess
 
 DB_PATH = os.path.join(os.path.expanduser('~'), 'toy_detections.db')
 
@@ -64,6 +65,9 @@ def index():
                   </li>
                   <li class="nav-item">
                     <a class="nav-link btn btn-warning text-white" href="{{ url_for('restart_node') }}">Restart Node</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link btn btn-warning text-white" href="{{ url_for('operate') }}">Operate</a>
                   </li>
                 </ul>
               </div>
@@ -149,20 +153,24 @@ def restart_node():
     # Restart the ros2 Node(s)
     os.system('colcon build --symlink-install')
     os.system('source install/setup.bash')
-    os.system('ros2 launch limo_gazebosim limo_gazebo_diff.launch.py world:=src/robot_assignment/worlds/custom_world.world')
-    os.system('rviz2 -d /opt/ros/lcas/src/limo_ros2/src/limo_gazebosim/rviz/urdf.rviz')
-    os.system('ros2 launch limo_navigation limo_navigation.launch.py')
-    os.system('ros2 run robot_assignment counter_3d')
-    os.system('ros2 run robot_assignment camera_classifier_node')
-    os.system('ros2 run robot_assignment detector_3d')
-    os.system('ros2 run robot_assignment color_3d_detection')
-    os.system('ros2 run robot_assignment demo_inspection')
+
+    subprocess.run(['ros2', 'launch', 'limo_gazebosim', 'limo_gazebo_diff.launch.py', 'world:=src/robot_assignment/worlds/custom_world.world'])
+    subprocess.run(['ros2', 'launch', 'limo_navigation', 'limo_navigation.launch.py'])
 
     return redirect(url_for('index'))
 
-class WebServerNode(Node):
+@app.route('/operate')
+def operate():
+    subprocess.run(['ros2', 'run', 'robot_assignment', 'counter_3d'])
+    subprocess.run(['ros2', 'run', 'robot_assignment', 'camera_classifier'])
+    subprocess.run(['ros2', 'run', 'robot_assignment', 'color_3d_detection'])
+    subprocess.run(['ros2', 'run', 'robot_assignment', 'demo_inspection'])
+
+    return redirect(url_for('index'))
+
+class WebServer(Node):
     def __init__(self):
-        super().__init__('web_server_node')
+        super().__init__('web_server')
         self.get_logger().info('Web server node has been started.')
 
 def run_flask_app():
@@ -170,14 +178,14 @@ def run_flask_app():
 
 def main(args=None):
     rclpy.init(args=args)
-    web_server_node = WebServerNode()
+    web_server = WebServer()
 
     flask_thread = Thread(target=run_flask_app)
     flask_thread.start()
 
-    rclpy.spin(web_server_node)
+    rclpy.spin(web_server)
 
-    web_server_node.destroy_node()
+    web_server.destroy_node()
     rclpy.shutdown()
     flask_thread.join()
 
