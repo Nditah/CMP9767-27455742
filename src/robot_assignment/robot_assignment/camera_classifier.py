@@ -25,7 +25,7 @@ class CameraClassifierNode(Node):
         # Subscription (replace '/image_raw' with your camera topic)
         self.subscription = self.create_subscription(
             Image,
-            '/image_raw',
+            '/limo/depth_camera_link/image_raw',
             self.image_callback,
             10
         )

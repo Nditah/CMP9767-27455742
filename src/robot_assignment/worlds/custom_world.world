@@ -147,10 +147,10 @@
       <pose>0 0 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>1725 592000000</sim_time>
-      <real_time>634 88766017</real_time>
-      <wall_time>1736347480 687316316</wall_time>
-      <iterations>627968</iterations>
+      <sim_time>3566 825000000</sim_time>
+      <real_time>1857 519596997</real_time>
+      <wall_time>1736382212 238376899</wall_time>
+      <iterations>1841233</iterations>
       <model name='ground_plane'>
         <pose>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -161,6 +161,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
+
       <model name='simple'>
         <pose>-5.16281 -2.68744 -0.054811 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -171,141 +172,121 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_box'>
-        <pose>-4.07021 0.843451 0.078131 0 -0 2.44246</pose>
+      <model name='unit_box_blue_1'>
+        <pose>-4 -0.4 0.05 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-4.07021 0.843451 0.078131 0 -0 2.44246</pose>
+          <pose>-4 -0.4 0.05 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 -0 0 -0 0</acceleration>
-          <wrench>0 0 -0 0 -0 0</wrench>
+          <acceleration>-0 -0 -0 0 -0 0</acceleration>
+          <wrench>-0 -0 -0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_box_clone'>
-        <pose>-1.8651 0.903391 0.078131 0 -0 1.29058</pose>
+      <model name='unit_box_green_1'>
+        <pose>-4 -1.2 0.05 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-1.8651 0.903391 0.078131 0 -0 1.29058</pose>
+          <pose>-4 -1.2 0.05 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>-0 -0 0 0 -0 0</acceleration>
           <wrench>-0 -0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_box_clone_clone_0'>
-        <pose>-2.67773 -1.87442 0.078131 0 -0 0.337613</pose>
+      <model name='unit_box_red_1'>
+        <pose>-4 -2 0.05 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-2.67773 -1.87442 0.078131 0 -0 0.337613</pose>
+          <pose>-4 -2 0.05 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0 -0 0 0 -0 0</acceleration>
-          <wrench>-0 -0 0 0 -0 0</wrench>
+          <acceleration>-0 -0 -0 0 -0 0</acceleration>
+          <wrench>-0 -0 -0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_box_clone_clone_0_clone'>
-        <pose>-0.090439 -1.64447 0.078131 -0 -0 -1.03796</pose>
+      <model name='unit_box_yellow_1'>
+        <pose>-4 0.4 0.05 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-0.090439 -1.64447 0.078131 -0 -0 -1.03796</pose>
+          <pose>-4 0.4 0.05 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
+          <acceleration>-0 -0 -0 0 -0 0</acceleration>
+          <wrench>-0 -0 -0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_box_clone_green'>
-        <pose>-4.43412 -1.85495 0.078131 0 -0 0.001108</pose>
+      <model name='unit_cylinder_blue_1'>
+        <pose>-3.6 -0 0.049997 4e-06 4e-06 -0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-4.43412 -1.85495 0.078131 0 -0 0.001108</pose>
+          <pose>-3.6 -0 0.049997 4e-06 4e-06 -0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
+          <acceleration>0 0 -9.8 -0 -0 -0</acceleration>
+          <wrench>0 0 -1.96 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_cylinder'>
-        <pose>-2.65777 -0.882692 0.153297 -1.5708 -0.802887 -1.70195</pose>
-        <scale>0.021013 0.021013 0.030179</scale>
-        <link name='link'>
-          <pose>-2.65777 -0.882692 0.153297 -1.5708 -0.802887 -1.70195</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='unit_cylinder_clone'>
-        <pose>-1248.48 331.196 0.499998 1.57083 -1.28683 2.881</pose>
-        <scale>0.128931 0.128931 0.225595</scale>
-        <link name='link'>
-          <pose>-1248.48 331.196 0.499998 1.57083 -1.28683 2.881</pose>
-          <velocity>-1.97881 0.532638 -0.00483 2.07632 0.816022 3.14157</velocity>
-          <acceleration>0.027942 0.089179 -9.65384 -0.179797 0.028504 0.023127</acceleration>
-          <wrench>0.027942 0.089179 -9.65384 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='unit_cylinder_clone_clone_0'>
-        <pose>-4.21865 -1.1901 0.112788 0 -0 0</pose>
+      <model name='unit_cylinder_green_1'>
+        <pose>-3.6 -0.8 0.049997 4e-06 4e-06 -0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-4.21865 -1.1901 0.112788 0 -0 0</pose>
+          <pose>-3.6 -0.8 0.049997 4e-06 4e-06 -0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
-          <wrench>0 0 -9.8 0 -0 0</wrench>
+          <wrench>0 0 -1.96 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_cylinder_clone_clone_1'>
-        <pose>-0.802434 -0.228889 0.112788 0 -0 0</pose>
+      <model name='unit_cylinder_red_1'>
+        <pose>-3.6 -1.6 0.049997 4e-06 4e-06 -0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-0.802434 -0.228889 0.112788 0 -0 0</pose>
+          <pose>-3.6 -1.6 0.049997 4e-06 4e-06 -0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 -9.8 -0 -0 -0</acceleration>
+          <wrench>0 0 -1.96 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_cylinder_yellow_1'>
+        <pose>-3.6 0.8 0.049997 4e-06 4e-06 -0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>-3.6 0.8 0.049997 4e-06 4e-06 -0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
-          <wrench>0 0 -9.8 0 -0 0</wrench>
+          <wrench>0 0 -1.96 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_cylinder_clone_red'>
-        <pose>-5.04502 1.11792 0.064465 1.5708 -0.436057 0.615973</pose>
+      <model name='unit_sphere_blue_1'>
+        <pose>-3.8 -0.2 0.05 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-5.04502 1.11792 0.064465 1.5708 -0.436057 0.615973</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 -0 0 0 -0 0</acceleration>
-          <wrench>0 -0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='unit_sphere_clone'>
-        <pose>-3.7111 1.17083 0.141824 2.78531 1.06096 0.613148</pose>
-        <scale>0.046015 0.046015 0.046015</scale>
-        <link name='link'>
-          <pose>-3.7111 1.17083 0.141824 2.78531 1.06096 0.613148</pose>
+          <pose>-3.8 -0.2 0.05 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_sphere_clone_clone'>
-        <pose>-0.310648 1.23155 0.081112 2.46434 0.115882 0.040249</pose>
+      <model name='unit_sphere_green_1'>
+        <pose>-3.8 -1 0.05 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-0.310648 1.23155 0.081112 2.46434 0.115882 0.040249</pose>
+          <pose>-3.8 -1 0.05 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_sphere_clone_clone_0'>
-        <pose>0.666579 0.31842 0.081112 -0.005249 0.03105 -0.011336</pose>
+      <model name='unit_sphere_red_1'>
+        <pose>-3.8 -1.8 0.05 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>0.666579 0.31842 0.081112 -0.005249 0.03105 -0.011336</pose>
+          <pose>-3.8 -1.8 0.05 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='unit_sphere_clone_red_1'>
-        <pose>-1.51411 -0.120211 0.081112 -2.9672 -0.074586 -2.03572</pose>
+      <model name='unit_sphere_yellow_1'>
+        <pose>-3.8 0.6 0.05 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose>-1.51411 -0.120211 0.081112 -2.9672 -0.074586 -2.03572</pose>
+          <pose>-3.8 0.6 0.05 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -938,14 +919,8 @@
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
-
-
-    <!-- ======================== 12 Toy Models (Box/Sphere/Cylinder x 4 Colors) ====================== -->
-    <!-- For each shape, we do: Red, Green, Blue, Yellow. All small, inside the "simple" area. -->
-
-    <!-- 1) Box Red -->
     <model name='unit_box_red_1'>
-      <pose>-4.0 -2.0 0.05 0 0 0</pose>
+      <pose>-4 -2 0.05 0 -0 0</pose>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
       <link name='link'>
@@ -959,6 +934,7 @@
             <iyz>0</iyz>
             <izz>0.001</izz>
           </inertia>
+          <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <visual name='visual'>
           <geometry>
@@ -983,13 +959,27 @@
               <size>0.1 0.1 0.1</size>
             </box>
           </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
         </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
       </link>
     </model>
-
-    <!-- 2) Sphere Red -->
     <model name='unit_sphere_red_1'>
-      <pose>-3.8 -1.8 0.05 0 0 0</pose>
+      <pose>-3.8 -1.8 0.05 0 -0 0</pose>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
       <link name='link'>
@@ -1003,6 +993,7 @@
             <iyz>0</iyz>
             <izz>0.001</izz>
           </inertia>
+          <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <visual name='visual'>
           <geometry>
@@ -1027,13 +1018,27 @@
               <radius>0.05</radius>
             </sphere>
           </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
         </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
       </link>
     </model>
-
-    <!-- 3) Cylinder Red -->
     <model name='unit_cylinder_red_1'>
-      <pose>-3.6 -1.6 0.05 0 0 0</pose>
+      <pose>-3.6 -1.6 0.05 0 -0 0</pose>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
       <link name='link'>
@@ -1047,6 +1052,7 @@
             <iyz>0</iyz>
             <izz>0.001</izz>
           </inertia>
+          <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <visual name='visual'>
           <geometry>
@@ -1073,13 +1079,27 @@
               <length>0.1</length>
             </cylinder>
           </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
         </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
       </link>
     </model>
-
-    <!-- 4) Box Green -->
     <model name='unit_box_green_1'>
-      <pose>-4.0 -1.2 0.05 0 0 0</pose>
+      <pose>-4 -1.2 0.05 0 -0 0</pose>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
       <link name='link'>
@@ -1093,6 +1113,7 @@
             <iyz>0</iyz>
             <izz>0.001</izz>
           </inertia>
+          <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <visual name='visual'>
           <geometry>
@@ -1117,13 +1138,27 @@
               <size>0.1 0.1 0.1</size>
             </box>
           </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
         </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
       </link>
     </model>
-
-    <!-- 5) Sphere Green -->
     <model name='unit_sphere_green_1'>
-      <pose>-3.8 -1.0 0.05 0 0 0</pose>
+      <pose>-3.8 -1 0.05 0 -0 0</pose>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
       <link name='link'>
@@ -1137,6 +1172,7 @@
             <iyz>0</iyz>
             <izz>0.001</izz>
           </inertia>
+          <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <visual name='visual'>
           <geometry>
@@ -1161,13 +1197,27 @@
               <radius>0.05</radius>
             </sphere>
           </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
         </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
       </link>
     </model>
-
-    <!-- 6) Cylinder Green -->
     <model name='unit_cylinder_green_1'>
-      <pose>-3.6 -0.8 0.05 0 0 0</pose>
+      <pose>-3.6 -0.8 0.05 0 -0 0</pose>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
       <link name='link'>
@@ -1181,6 +1231,7 @@
             <iyz>0</iyz>
             <izz>0.001</izz>
           </inertia>
+          <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <visual name='visual'>
           <geometry>
@@ -1207,13 +1258,27 @@
               <length>0.1</length>
             </cylinder>
           </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
         </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
       </link>
     </model>
-
-    <!-- 7) Box Blue -->
     <model name='unit_box_blue_1'>
-      <pose>-4.0 -0.4 0.05 0 0 0</pose>
+      <pose>-4 -0.4 0.05 0 -0 0</pose>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
       <link name='link'>
@@ -1227,6 +1292,7 @@
             <iyz>0</iyz>
             <izz>0.001</izz>
           </inertia>
+          <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <visual name='visual'>
           <geometry>
@@ -1251,13 +1317,27 @@
               <size>0.1 0.1 0.1</size>
             </box>
           </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
         </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
       </link>
     </model>
-
-    <!-- 8) Sphere Blue -->
     <model name='unit_sphere_blue_1'>
-      <pose>-3.8 -0.2 0.05 0 0 0</pose>
+      <pose>-3.8 -0.2 0.05 0 -0 0</pose>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
       <link name='link'>
@@ -1271,6 +1351,7 @@
             <iyz>0</iyz>
             <izz>0.001</izz>
           </inertia>
+          <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <visual name='visual'>
           <geometry>
@@ -1295,13 +1376,27 @@
               <radius>0.05</radius>
             </sphere>
           </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
         </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
       </link>
     </model>
-
-    <!-- 9) Cylinder Blue -->
     <model name='unit_cylinder_blue_1'>
-      <pose>-3.6 0.0 0.05 0 0 0</pose>
+      <pose>-3.6 0 0.05 0 -0 0</pose>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
       <link name='link'>
@@ -1315,6 +1410,7 @@
             <iyz>0</iyz>
             <izz>0.001</izz>
           </inertia>
+          <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <visual name='visual'>
           <geometry>
@@ -1341,13 +1437,27 @@
               <length>0.1</length>
             </cylinder>
           </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
         </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
       </link>
     </model>
-
-    <!-- 10) Box Yellow -->
     <model name='unit_box_yellow_1'>
-      <pose>-4.0 0.4 0.05 0 0 0</pose>
+      <pose>-4 0.4 0.05 0 -0 0</pose>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
       <link name='link'>
@@ -1361,6 +1471,7 @@
             <iyz>0</iyz>
             <izz>0.001</izz>
           </inertia>
+          <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <visual name='visual'>
           <geometry>
@@ -1385,13 +1496,27 @@
               <size>0.1 0.1 0.1</size>
             </box>
           </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
         </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
       </link>
     </model>
-
-    <!-- 11) Sphere Yellow -->
     <model name='unit_sphere_yellow_1'>
-      <pose>-3.8 0.6 0.05 0 0 0</pose>
+      <pose>-3.8 0.6 0.05 0 -0 0</pose>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
       <link name='link'>
@@ -1405,6 +1530,7 @@
             <iyz>0</iyz>
             <izz>0.001</izz>
           </inertia>
+          <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <visual name='visual'>
           <geometry>
@@ -1429,13 +1555,27 @@
               <radius>0.05</radius>
             </sphere>
           </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
         </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
       </link>
     </model>
-
-    <!-- 12) Cylinder Yellow -->
     <model name='unit_cylinder_yellow_1'>
-      <pose>-3.6 0.8 0.05 0 0 0</pose>
+      <pose>-3.6 0.8 0.05 0 -0 0</pose>
       <static>0</static>
       <allow_auto_disable>1</allow_auto_disable>
       <link name='link'>
@@ -1449,6 +1589,7 @@
             <iyz>0</iyz>
             <izz>0.001</izz>
           </inertia>
+          <pose>0 0 0 0 -0 0</pose>
         </inertial>
         <visual name='visual'>
           <geometry>
@@ -1475,10 +1616,24 @@
               <length>0.1</length>
             </cylinder>
           </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
         </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
       </link>
     </model>
-
-
   </world>
 </sdf>

@@ -32,14 +32,25 @@ def main():
     navigator = BasicNavigator()
 
     # Inspection route, probably read in from a file for a real application
-    # from either a map or drive and repeat. (x, y, yaw)
-    inspection_route = [
+    # from either a map or drive and repeat. (x, y,... yaw)
+    inspection_route1 = [
         [0.59, 0.95, 0.0, 0.0, 0.13, 0.99],
         [-0.73, 1.01, 0.0, 0.0, -0.5, 0.82],
         [0.58, -1.98, 0.0, 0.0, 0.99, 0.13],
         [-4.66, -2.29, 0.0, 0.0, 0.08, 0.99],
         [-1.56, 0.75, 0.0, 0.0, -0.81, 0.58],
         [-4.8, 0.58, 0.0, 0.0, -0.2, 0.97],
+    ]
+    inspection_route = [
+        [0.13, -0.03, 0.0, 0.0, 0.0, 0.12],  # A - Start at the initial pose of the limo
+        [0.4, -2.11, 0.0, 0.0, 0.0, -2.0],  # B - Move to the right
+        [-4.69, -2.11, 0.0, 0.0, 0.0, 1.0],  # C - Move to the top-right corner
+        [-4.83, 0.92, 0.0, 0.0, 0.0, 0.02],  # D - Move to the top-left corner
+        [-1.69, 1.0, 0.0, 0.0, 0.0, -1.50],  # E - Move to the bottom-left corner
+        [-1.55, -1.45, 0.0, 0.0, 0.0, -0.63],  # F - Move to the bottom-right corner
+        [-0.77, -1.50, 0.0, 0.0, 0.0, 0.79],  # G - Move to the bottom-right corner
+        [-0.71, -0.06, 0.0, 0.0, 0.0, 0.60],  # H - Move to the bottom-right corner
+         # Return to the starting point
     ]
 
     # Set our demo's initial pose

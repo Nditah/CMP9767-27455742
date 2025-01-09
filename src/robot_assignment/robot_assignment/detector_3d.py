@@ -119,15 +119,15 @@ class Detector3D(Node):
 
         # detect a color blob in the color image (here it is bright red)
         # provide the right values, or even better do it in HSV
-        image_mask = cv2.inRange(self.image_color, (0, 0, 80), (50, 50, 255))
+        image_mask_for_red = cv2.inRange(self.image_color, (0, 0, 80), (50, 50, 255))
 
         # finding all separate image regions in the binary image, using connected components algorithm
-        object_contours, _ = cv2.findContours( image_mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+        object_contours_for_red, _ = cv2.findContours( image_mask_for_red, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 
         # iterate through all detected objects/contours
         # calculate their image coordinates
         # and then project from image to global coordinates
-        for num, cnt in enumerate(object_contours):
+        for num, cnt in enumerate(object_contours_for_red):
             area = cv2.contourArea(cnt)
             # detect only large objects
             if area > self.min_area_size:
@@ -145,7 +145,7 @@ class Detector3D(Node):
                 self.object_location_pub.publish(PoseStamped(header=Header(frame_id=self.global_frame),
                                               pose=global_pose))        
 
-                print(f'--- object id {num} ---')
+                print(f'---RED Object id {num} ---')
                 print('image coords: ', image_coords)
                 print('camera coords: ', camera_pose.position)
                 print('global coords: ', global_pose.position)
