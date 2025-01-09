@@ -20,7 +20,6 @@ setup(
     maintainer_email='27455742@students.lincoln.ac.uk',
     description='ROS2 Package for the Robot Programming - CMP9767 course at the University of Lincoln, UK: color and shape classification, storing results in SQLite, and hosting a web server.',
     license='MIT',
-    tests_require=['pytest'],
     entry_points={
         'console_scripts': [
             'mover = robot_assignment.mover:main',
@@ -32,7 +31,11 @@ setup(
             'tf_listener = robot_assignment.tf_listener:main',            
             'demo_inspection = robot_assignment.demo_inspection:main',
             'camera_classifier_node = robot_assignment.camera_classifier:main',
+            'color_3d_detection = robot_assignment.color_3d_detection:main',
             'web_server_node = robot_assignment.web_server:main',
         ],
+    },
+     extras_require={
+        'test': ['pytest'],
     },
 )

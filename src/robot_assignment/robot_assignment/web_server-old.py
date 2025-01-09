@@ -47,28 +47,8 @@ def index():
         />
         <meta http-equiv="refresh" content="5"> <!-- auto-refresh every 5s -->
       </head>
-      <body>
+      <body class="bg-light">
         <div class="container my-4">
-
-          <!-- Navbar -->
-          <nav class="navbar navbar-expand-lg navbar-primary bg-primary mb-4">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">TOY DETECTION</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link btn btn-danger text-white me-2" href="{{ url_for('clear_database') }}">Clear Database</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link btn btn-warning text-white" href="{{ url_for('restart_node') }}">Restart Node</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
 
           <!-- Status Banner -->
           <div class="row">
@@ -78,6 +58,12 @@ def index():
                 <p>Total Toy Count = {{ total_objects }}</p>
               </div>
             </div>
+          </div>
+
+          <!-- Menubar -->
+          <div class="row">
+            <a href="{{ url_for('clear_database') }}" class="btn btn-danger">Clear Database</a>
+            <a href="{{ url_for('restart_node') }}" class="btn btn-warning">Restart Node</a>
           </div>
 
           <h2 class="mb-3">Latest Toy Detections</h2>
@@ -149,14 +135,13 @@ def restart_node():
     # Restart the ros2 Node(s)
     os.system('colcon build --symlink-install')
     os.system('source install/setup.bash')
-    os.system('ros2 launch limo_gazebosim limo_gazebo_diff.launch.py world:=src/robot_assignment/worlds/custom_world.world')
+    os.system('ros2 launch limo_gazebosim limo_gazebo_diff.launch.py world:=src/robot_assignment/worlds/custom_world2.world')
     os.system('rviz2 -d /opt/ros/lcas/src/limo_ros2/src/limo_gazebosim/rviz/urdf.rviz')
     os.system('ros2 launch limo_navigation limo_navigation.launch.py')
-    os.system('ros2 run robot_assignment counter_3d')
-    os.system('ros2 run robot_assignment camera_classifier_node')
-    os.system('ros2 run robot_assignment detector_3d')
     os.system('ros2 run robot_assignment color_3d_detection')
+    os.system('ros2 run robot_assignment detector_3d')
     os.system('ros2 run robot_assignment demo_inspection')
+    os.system('ros2 run robot_assignment counter_3d')
 
     return redirect(url_for('index'))
 
