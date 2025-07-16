@@ -43,7 +43,7 @@ pip install flask
 sudo apt install ros-humble-nav2-* -y
 
 
-bash: pytest: command not found
+bash: pytest
 
 colcon build --symlink-install
 
